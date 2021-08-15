@@ -5,7 +5,7 @@ document.getElementById('deposit-btn').addEventListener('click',function(){
     const depositInput = document.getElementById('deposit-input');
     const newDepositAmount = depositInput.value;
     
-    if(newDepositAmount == '' && newDepositAmount != 'number'){
+    if(newDepositAmount == '' && newDepositAmount != 'number' || newDepositAmount < 0){
         alert('Please Enter Your Ammount,Whatever You Want to Deposit')
     }else{
         // get the amount deposit
@@ -55,7 +55,7 @@ document.getElementById('withdraw-btn').addEventListener('click',function(){
     const withdrawInput = document.getElementById('withdraw-input');
     const newWithdrawAmount = withdrawInput.value;
 
-    if(newWithdrawAmount == '' && newWithdrawAmount != 'number'){
+    if(newWithdrawAmount == '' && newWithdrawAmount != 'number' || newWithdrawAmount < 0){
         alert('Please Enter Your Ammount,Whatever You Want to Withdraw')
     }else{
         // get the amount deposit
